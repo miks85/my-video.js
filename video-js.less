@@ -15,13 +15,13 @@ Create your own skin at http://designer.videojs.com
 @touch-device-font-size: 15px;
 
 // The main font color controlsthe color of the text and the icons (font icons)
-@main-font-color: #006E7D; // e.g. rgb(255, 255, 255) or #ffffff
+@main-font-color: #ffffff; // e.g. rgb(255, 255, 255) or #ffffff
 
 // The default color of control backgrounds is mostly black but with a little
 // bit of blue so it can still be seen on all black video frames, which are
 // common.http://designer.videojs.com/
-@control-bg-color: #07141E; // e.g. rgb(255, 255, 255) or #ffffff
-@control-bg-alpha: 0.4; // 1.0 = 100% opacity, 0.0 = 0% opacity
+@control-bg-color: #000000; // e.g. rgb(255, 255, 255) or #ffffff
+@control-bg-alpha: 0.3; // 1.0 = 100% opacity, 0.0 = 0% opacity
 
 // The slider bar color is used for the progress bar and the volume bar
 @slider-bar-color: #000000; // e.g. rgb(255, 255, 255) or #ffffff
@@ -50,11 +50,11 @@ Create your own skin at http://designer.videojs.com
 // Now that font size is set, the following em values will be a multiple of the
 // new font size. If @big-play-font-size is 3em (30px), then setting the any of
 // the following values to 2em would equal 60px. 2 * font-size
-@big-play-margin: 2em;
+@big-play-margin: 4em;
 @big-play-width: 4em;
 @big-play-height: 2em;
 @big-play-border-radius: 0.0em;
-@big-play-border-width: 0.05em;
+@big-play-border-width: 0.0em;
 @big-play-border-color: #000000;
 
 /* SKIN
@@ -390,7 +390,7 @@ easily in the skin designer. http://designer.videojs.com/
 
   font-size: @big-play-font-size;
   display: block;
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   width: @big-play-width;
   height: @big-play-height;
@@ -405,14 +405,14 @@ easily in the skin designer. http://designer.videojs.com/
   border: @big-play-border-width solid @big-play-border-color;
 
   .border-radius(@big-play-border-radius);
-  .box-shadow(0px 0px 1em rgba(255, 255, 255, 0.25));
-  .transition(all 0.4s);
+  .box-shadow(0px 0px 0em rgba(255, 255, 255, 0.0));
+  .transition(all 2s);
 }
 
 /* Optionally center */
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
-  @total-width: (@big-play-width + (@big-play-border-width * 2));
-  @total-height: (@big-play-height + (@big-play-border-width * 2));
+  @total-width: (@big-play-width + (@big-play-border-width * 0));
+  @total-height: (@big-play-height + (@big-play-border-width * 0));
 
   .absolute-align(center, @big-play-margin, @total-width);
   .absolute-align(middle, @big-play-margin, @total-height);
@@ -438,10 +438,10 @@ easily in the skin designer. http://designer.videojs.com/
   border-color: #fff;
   /* IE8 needs a non-glow hover state *///
   background-color: rgb(80, 80, 80);
-  background-color: rgba(50, 50, 50, 0.75);
+  background-color: rgba(0, 128, 189, 0.3);
 
-  .box-shadow(0 0 3em #fff);
-  .transition(all 0s);
+  .box-shadow(0 0 0em #fff);
+  .transition(all 2s);
 }
 
 .vjs-default-skin .vjs-big-play-button:before {
