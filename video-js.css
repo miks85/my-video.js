@@ -11,7 +11,7 @@ skin name to your video tag instead of the default skin.
 e.g. <video class="video-js my-skin-name">
 */
 .vjs-default-skin {
-  color: #006e7d;
+  color: #ffffff;
 }
 /* Custom Icon Font
 --------------------------------------------------------------------------------
@@ -86,8 +86,8 @@ The default control bar that is a container for most of the controls.
   /* Height includes any margin you want above or below control items */
   height: 3em;
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.4);
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /* Show the control bar only once the video has started playing */
 .vjs-default-skin.vjs-has-started .vjs-control-bar {
@@ -310,13 +310,13 @@ Positioning of the play button in the center or other corners can be done more
 easily in the skin designer. http://designer.videojs.com/
 */
 .vjs-default-skin .vjs-big-play-button {
-  right: 2em;
+  right: 4em;
   /* Center it vertically */
   top: 50%;
-  margin-top: -1.05em;
+  margin-top: -1em;
   font-size: 4em;
   display: block;
-  z-index: 2;
+  z-index: 0;
   position: absolute;
   width: 4em;
   height: 2em;
@@ -326,31 +326,31 @@ easily in the skin designer. http://designer.videojs.com/
   opacity: 1;
   /* Need a slightly gray bg so it can be seen on black backgrounds */
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.4);
-  border: 0.05em solid #000000;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0em solid #000000;
   /* border-radius */
   -webkit-border-radius: 0em;
   -moz-border-radius: 0em;
   border-radius: 0em;
   /* box-shadow */
-  -webkit-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
-  -moz-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 0em rgba(255, 255, 255, 0);
+  -moz-box-shadow: 0px 0px 0em rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 0em rgba(255, 255, 255, 0);
   /* transition */
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
 }
 /* Optionally center */
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
   /* Center it horizontally */
   left: 50%;
-  margin-left: -2.05em;
+  margin-left: -2em;
   /* Center it vertically */
   top: 50%;
-  margin-top: -1.05em;
+  margin-top: -1em;
 }
 /* Hide if controls are disabled */
 .vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
@@ -371,16 +371,16 @@ easily in the skin designer. http://designer.videojs.com/
   border-color: #fff;
   /* IE8 needs a non-glow hover state */
   background-color: #505050;
-  background-color: rgba(50, 50, 50, 0.75);
+  background-color: rgba(0, 128, 189, 0.3);
   /* box-shadow */
-  -webkit-box-shadow: 0 0 3em #ffffff;
-  -moz-box-shadow: 0 0 3em #ffffff;
-  box-shadow: 0 0 3em #ffffff;
+  -webkit-box-shadow: 0 0 0em #ffffff;
+  -moz-box-shadow: 0 0 0em #ffffff;
+  box-shadow: 0 0 0em #ffffff;
   /* transition */
-  -webkit-transition: all 0s;
-  -moz-transition: all 0s;
-  -o-transition: all 0s;
-  transition: all 0s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
 }
 .vjs-default-skin .vjs-big-play-button:before {
   content: "\e001";
@@ -565,8 +565,8 @@ easily in the skin designer. http://designer.videojs.com/
   /* Width of menu - width of button / 2 */
 
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.4);
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
   /* box-shadow */
   -webkit-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
   -moz-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
