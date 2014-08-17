@@ -312,13 +312,13 @@ easily in the skin designer. http://designer.videojs.com/
 .vjs-default-skin .vjs-big-play-button {
   /* Center it horizontally */
   left: 50%;
-  margin-left: -250px;
+  margin-left: -480px;
   top: 87px;
   font-size: 4em;
   display: block;
   z-index: 0;
   position: absolute;
-  width: 500px;
+  width: 960px;
   height: 67px;
   text-align: center;
   vertical-align: middle;
@@ -347,7 +347,7 @@ easily in the skin designer. http://designer.videojs.com/
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
   /* Center it horizontally */
   left: 50%;
-  margin-left: -250px;
+  margin-left: -480px;
   /* Center it vertically */
   top: 50%;
   margin-top: -33.5px;
@@ -371,7 +371,7 @@ easily in the skin designer. http://designer.videojs.com/
   border-color: #fff;
   /* IE8 needs a non-glow hover state */
   background-color: #505050;
-  background-color: rgba(84, 72, 66, 0.3);
+  background-color: rgba(84, 72, 66, 0.5);
   /* box-shadow */
   -webkit-box-shadow: 0 0 0em #ffffff;
   -moz-box-shadow: 0 0 0em #ffffff;
