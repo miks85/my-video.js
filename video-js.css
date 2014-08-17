@@ -313,7 +313,9 @@ easily in the skin designer. http://designer.videojs.com/
   /* Center it horizontally */
   left: 50%;
   margin-left: -480px;
-  top: 87px;
+  /* Center it vertically */
+  top: 50%;
+  margin-top: -33.5px;
   font-size: 4em;
   display: block;
   z-index: 0;
